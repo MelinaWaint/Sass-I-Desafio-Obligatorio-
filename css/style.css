@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Mulish', sans-serif; }
+
+/* INDEX.HTML HEADER*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 230px; }
+  header .bloqueLogoTitulo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: 5px; }
+    header .bloqueLogoTitulo .h1Index {
+      display: inline-block;
+      width: 50%;
+      padding: 10px 15px;
+      border: #16167a solid 4px;
+      border-radius: 50px;
+      color: #272794;
+      font-size: 30px; }
+    header .bloqueLogoTitulo .bloqueLogo {
+      width: 25%;
+      max-width: 246px;
+      min-width: 200px; }
+      header .bloqueLogoTitulo .bloqueLogo .logo {
+        width: 100%; }
+  header .bloqueMenu {
+    display: inline-block;
+    padding: 5px;
+    text-align: center; }
+    header .bloqueMenu .menu {
+      padding: 0;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center; }
+      header .bloqueMenu .menu li a {
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+        border: #101079 solid 3px;
+        border-radius: 60px;
+        text-decoration: none;
+        font-size: 23px;
+        color: black;
+        text-align: center; }
+        header .bloqueMenu .menu li a:hover {
+          background-color: #e0e0ff; }
+      header .bloqueMenu .menu .inicio {
+        background-color: #c4c4f7; }
+
+/*CSS MAIN INDEX.HTML*/
+.indexMain {
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "tituloMain tituloMain tituloMain" "bloqueUno bloqueUno bloqueUno" "bloqueDos bloqueDos bloqueDos" "bloqueTres bloqueTres bloqueTres";
+  justify-content: center;
+  align-content: center;
+  font-family: 'Comfortaa', cursive;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_769032-MLA42274041282_062020-O.jpg);
+  background-size: cover; }
+  .indexMain .tituloMain {
+    grid-area: tituloMain;
+    font-size: 70px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #111125; }
+  .indexMain .bloqueUno {
+    grid-area: bloqueUno;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px; }
+    .indexMain .bloqueUno .parrafoMain {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: 100px; }
+      .indexMain .bloqueUno .parrafoMain h3 {
+        font-size: 40px; }
+      .indexMain .bloqueUno .parrafoMain p {
+        font-size: 30px;
+        font-weight: bold; }
+    .indexMain .bloqueUno .imgMain {
+      width: 30%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  .indexMain .bloqueDos {
+    grid-area: bloqueDos;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 0px 20px; }
+    .indexMain .bloqueDos h3 {
+      margin-right: 40px;
+      font-size: 50px; }
+    .indexMain .bloqueDos .imgMain {
+      width: 26%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  .indexMain .bloqueTres {
+    grid-area: bloqueTres;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 35px; }
+    .indexMain .bloqueTres p {
+      margin-left: 20px;
+      font-weight: bold; }
+    .indexMain .bloqueTres .imgMain {
+      width: 26%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      margin-bottom: 20px; }
+
+footer {
+  margin: 25px;
+  display: flex; }
+  footer .quienesSomos {
+    width: 80%; }
+    footer .quienesSomos .h2Index {
+      width: 40%;
+      margin-bottom: 10px;
+      border: #131338 solid 4px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 35px; }
+      footer .quienesSomos .h2Index:hover {
+        background-color: #8c8cd4; }
+    footer .quienesSomos .h3Index {
+      font-size: 25px; }
+  footer .redes {
+    display: flex;
+    width: 25%;
+    align-items: right;
+    justify-content: flex-end; }
+    footer .redes .telefono {
+      margin-top: 40px;
+      font-size: 20px;
+      text-align: center; }
+    footer .redes img {
+      justify-content: flex-end;
+      width: 100px; }
